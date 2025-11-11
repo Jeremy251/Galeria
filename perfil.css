@@ -1,0 +1,82 @@
+/* Fondo de toda la página de perfil */
+body {
+    background-image: url('arte/pngtree-an-art-gallery-has-many-framed-pictures-in-it-picture-image_3533730.jpg');
+    /* Cambia la ruta a tu imagen */
+    background-size: cover;
+    /* Cubre toda la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo del cuadro de perfil (semi-transparente para que se vea la imagen de fondo) */
+.profile-section {
+    max-width: 600px;
+    /* Más ancho */
+    min-height: 500px;
+    /* Más alto */
+    margin: 70px auto 50px;
+    /* Más margen superior para separar del header */
+    text-align: left;
+    background: rgba(224, 247, 250, 0.9);
+    /* Azul pastel semi-transparente */
+    padding: 40px;
+    /* Más espacio interno */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos */
+.profile-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #111;
+    font-size: 1.8rem;
+}
+
+/* Inputs */
+.profile-section input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Botones */
+.profile-section button {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#changeNameBtn {
+    background-color: #111;
+    color: white;
+}
+
+#changeNameBtn:hover {
+    background-color: #ffcc00;
+    color: #111;
+}
+
+#deleteAccountBtn {
+    background-color: #c0392b;
+    color: white;
+}
+
+#deleteAccountBtn:hover {
+    background-color: #922b21;
+}
+
+/* Para mantener el footer abajo */
+footer {
+    margin-top: 20px;
+}

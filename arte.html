@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería de Arte - Galería Virtual</title>
+    <link rel="icon" type="image/png" href="arte/calamardo1.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="arte.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="arte/calamardo1.jpg" alt="Logo Galería" /></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="arte.html" class="active">Arte</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-right">
+            <div class="user-menu">
+                <i class="fa-solid fa-user" id="userIcon"></i>
+                <div class="login-dropdown" id="loginDropdown">
+                    <form id="loginForm">
+                        <input type="email" id="loginEmail" placeholder="Correo electrónico" required />
+                        <input type="password" id="loginPassword" placeholder="Contraseña" required />
+                        <button type="submit">Iniciar sesión</button>
+                    </form>
+                    <p>O con Google</p>
+                    <button id="googleLoginBtn" class="google-btn">
+                        <i class="fa-brands fa-google"></i> Iniciar sesión con Google
+                    </button>
+                    <p>No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+                </div>
+            </div>
+
+            <div class="cart-icon" id="cartIcon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-dropdown" id="cartDropdown">
+                    <p>Tu carrito está vacío por ahora.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="arte-section">
+        <div class="arte-header">
+            <h2>Galería de Arte</h2>
+        </div>
+
+        <div class="arte-tools">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar por nombre o artista...">
+                <button id="searchBtn">Buscar</button>
+            </div>
+            <button id="uploadArtBtn">Subir Imagen</button>
+        </div>
+
+        <input type="file" id="artImage" accept="image/*" class="hidden">
+
+        <div id="addArtForm" class="modal hidden">
+            <div class="modal-content">
+                <span id="closeForm" style="float:right;cursor:pointer;">&times;</span>
+                <h3>Agregar nueva Imagen</h3>
+                <img id="imagePreview" class="preview hidden" alt="Vista previa">
+
+                <input type="text" id="artName" placeholder="Nombre de la Imagen" required>
+                <input type="text" id="artistName" placeholder="Nombre del artista" required>
+
+                <div class="price-input">
+                    <span class="currency">S/</span>
+                    <input type="number" id="price" placeholder="Precio" required>
+                </div>
+
+                <textarea id="description" placeholder="Descripción de la Imagen" required></textarea>
+
+                <input type="text" id="uploadedBy" style="display:none;">
+
+                <button id="saveArt">Guardar Imagen</button>
+            </div>
+        </div>
+
+        <div id="gallery" class="gallery"></div>
+
+        <div id="commentModal" class="modal hidden">
+            <div class="modal-content">
+                <span id="modalClose" style="cursor:pointer; float:right;">&times;</span>
+                <img id="modalArtImage" src="" alt="" style="width:100%; border-radius:10px; margin-bottom:10px;">
+                <h3 id="modalArtName"></h3>
+                <p id="modalArtist"></p>
+                <p id="modalDescription"></p>
+                <div id="commentsList"
+                    style="max-height:200px; overflow-y:auto; margin-bottom:10px; border-top:1px solid #ccc; padding-top:5px;">
+                </div>
+                <textarea id="commentInput" placeholder="Escribe un comentario..."
+                    style="width:100%; margin-bottom:5px;"></textarea>
+                <input type="number" id="ratingInput" min="1" max="5" placeholder="⭐ Rating 1-5"
+                    style="width:100%; margin-bottom:5px;">
+                <button id="addCommentBtn"
+                    style="width:100%; background:#111; color:white; border:none; padding:10px; border-radius:6px; cursor:pointer;">Agregar
+                    comentario</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2025 Galería Virtual | Todos los derechos reservados</p>
+    </footer>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="mainsesion.js"></script>
+    <script type="module" src="arte.js"></script>
+</body>
+
+</html>

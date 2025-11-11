@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Virtual</title>
+    <link rel="icon" type="image/png" href="arte/calamardo1.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="arte/calamardo1.jpg" alt="Logo Galería" /></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="arte.html">Arte</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-right">
+            <div class="user-menu">
+                <i class="fa-solid fa-user" id="userIcon"></i>
+                <div class="login-dropdown" id="loginDropdown">
+                    <form id="loginForm">
+                        <input type="email" id="loginEmail" placeholder="Correo electrónico" required />
+                        <input type="password" id="loginPassword" placeholder="Contraseña" required />
+                        <button type="submit">Iniciar sesión</button>
+                    </form>
+
+                    <p>O con Google</p>
+
+                    <button id="googleLoginBtn" class="google-btn">
+                        <i class="fa-brands fa-google"></i> Iniciar sesión con Google
+                    </button>
+
+                    <p>No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+                </div>
+
+            </div>
+
+            <div class="cart-icon" id="cartIcon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-dropdown" id="cartDropdown">
+                    <p>Tu carrito está vacío por ahora.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                Explora el arte de Calamardo, uno de los mejores artistas más premiados
+                que nos dejó las frases más inspiradoras
+            </h1>
+            <p>
+                "Bob Esponja, si estuviera atrapado en el fondo de un pozo, por tres años,
+                sin nada que comer más que esa Cangreburger, ¡me comería mis propias
+                piernas primero!"
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Obras Maestras Destacadas</h2>
+        <div class="grid">
+            <div class="card"><img src="arte/calamardo1.jpg" />
+                <p>Calamardo 1</p>
+            </div>
+            <div class="card"><img src="arte/calamardo2.jpg" />
+                <p>Calamardo 2</p>
+            </div>
+            <div class="card"><img src="arte/calamardo3.jpg" />
+                <p>Calamardo 3</p>
+            </div>
+            <div class="card"><img src="arte/calamardo4.jpg" />
+                <p>Calamardo 4</p>
+            </div>
+            <div class="card"><img src="arte/calamardo5.jpg" />
+                <p>Calamardo 5</p>
+            </div>
+            <div class="card"><img src="arte/calamardo6.jpg" />
+                <p>Calamardo 6</p>
+            </div>
+            <div class="card"><img src="" />
+                <p>A</p>
+            </div>
+            <div class="card"><img src="" />
+                <p>A</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color:#fffbe6;">
+        <h2>Artistas Destacados</h2>
+        <div class="grid">
+            <div class="card"><img src="arte/calamardo.jpeg" />
+                <p>Calamardo</p>
+            </div>
+            <div class="card"><img src="arte/calamardo.jpeg" />
+                <p>Calamardo</p>
+            </div>
+            <div class="card"><img src="arte/calamardo.jpeg" />
+                <p>Calamardo</p>
+            </div>
+            <div class="card"><img src="arte/calamardo.jpeg" />
+                <p>Calamardo</p>
+            </div>
+            <div class="card"><img src="arte/calamardo.jpeg" />
+                <p>Calamardo</p>
+            </div>
+            <div class="card"><img src="arte/calamardo.jpeg" />
+                <p>Calamardo</p>
+            </div>
+            <div class="card"><img src="" />
+                <p>A</p>
+            </div>
+            <div class="card"><img src="" />
+                <p>A</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2025 Galería Virtual | Todos los derechos reservados</p>
+    </footer>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="mainsesion.js"></script>
+
+</body>
+
+</html>
