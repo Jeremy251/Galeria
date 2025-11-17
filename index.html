@@ -5,96 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería Virtual</title>
-    <link rel="icon" type="image/png" href="arte/calamardo1.jpg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/a2d4f0b7b6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <header>
         <div class="logo">
-            <a href="index.html"><img src="arte/calamardo1.jpg" alt="Logo Galería" /></a>
+            <a href="index.html"><img src="img/logo.png" alt="Logo Galería"></a>
         </div>
 
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="arte.html">Arte</a></li>
                 <li><a href="artistas.html">Artistas</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
-        <div class="nav-right">
-            <div class="user-menu">
-                <i class="fa-solid fa-user" id="userIcon"></i>
-                <div class="login-dropdown" id="loginDropdown">
-                    <form id="loginForm">
-                        <input type="email" id="loginEmail" placeholder="Correo electrónico" required />
-                        <input type="password" id="loginPassword" placeholder="Contraseña" required />
-                        <button type="submit">Iniciar sesión</button>
-                    </form>
+        <div class="icons">
+            <i class="fas fa-shopping-cart"></i>
 
-                    <p>O con Google</p>
-
-                    <button id="googleLoginBtn" class="google-btn">
-                        <i class="fa-brands fa-google"></i> Iniciar sesión con Google
-                    </button>
-
-                    <p>No tienes cuenta? <a href="registro.html">Regístrate</a></p>
-                </div>
-
-            </div>
-
-            <div class="cart-icon" id="cartIcon">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <div class="cart-dropdown" id="cartDropdown">
-                    <p>Tu carrito está vacío por ahora.</p>
+            <div class="menu">
+                <i class="fas fa-user-circle"></i>
+                <div class="menu-content">
+                    <a href="login.html">Iniciar Sesión</a>
+                    <a href="register.html">Registrarse</a>
                 </div>
             </div>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <h1>
-                Explora el arte de Calamardo, uno de los mejores artistas más premiados
-                que nos dejó las frases más inspiradoras
-            </h1>
-            <p>
-                "Bob Esponja, si estuviera atrapado en el fondo de un pozo, por tres años,
-                sin nada que comer más que esa Cangreburger, ¡me comería mis propias
-                piernas primero!"
-            </p>
+            <h1>Explora el arte que trasciende el tiempo y las fronteras.
+Conoce a los artistas que dan vida a emociones, colores y formas únicas, dejando huella en cada trazo y en cada mirada que se detiene a contemplar sus obras.</h1>
         </div>
     </section>
 
     <section class="section">
         <h2>Obras Maestras Destacadas</h2>
         <div class="grid">
-            <div class="card"><img src="arte/calamardo1.jpg" />
-                <p>Calamardo 1</p>
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/%22La_noche_estrellada%22_de_Van_gogh.jpg/250px-%22La_noche_estrellada%22_de_Van_gogh.jpg">
+                <p>La noche estrellada de van gogh</p>
             </div>
-            <div class="card"><img src="arte/calamardo2.jpg" />
-                <p>Calamardo 2</p>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScS5SIXHg6X_-njygAy5TaLTeRaBZ5zEp7tA&s">
+                <p>Mona Lisa - Leonardo da vinci</p>
             </div>
-            <div class="card"><img src="arte/calamardo3.jpg" />
-                <p>Calamardo 3</p>
+            <div class="card"><img src="https://cdn0.unprofesor.com/es/posts/1/8/4/comentario_de_el_estanque_de_ninfeas_4481_1_600.jpg">
+                <p>El Estanque de Ninfeas - Claude Monet</p>
             </div>
-            <div class="card"><img src="arte/calamardo4.jpg" />
-                <p>Calamardo 4</p>
+            <div class="card"><img src="https://wahooart.com/media/artworks/images/full/28/75/287570aa7812425287de27026f698eb7.Jpg">
+                <p>El suicidio de Dorothy Hale - Frida Kahlo</p>
             </div>
-            <div class="card"><img src="arte/calamardo5.jpg" />
-                <p>Calamardo 5</p>
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/1196px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg">
+                <p>El Beso - Gustav Klimt</p>
             </div>
-            <div class="card"><img src="arte/calamardo6.jpg" />
-                <p>Calamardo 6</p>
-            </div>
-            <div class="card"><img src="" />
-                <p>A</p>
-            </div>
-            <div class="card"><img src="" />
-                <p>A</p>
+            <div class="card"><img src="https://www.ttamayo.com/wp-content/uploads/2019/02/f3c16187-amanecer-monet-impresionismo.jpg">
+                <p>Amanecer - Claude Monet</p>
             </div>
         </div>
     </section>
@@ -102,29 +80,23 @@
     <section class="section" style="background-color:#fffbe6;">
         <h2>Artistas Destacados</h2>
         <div class="grid">
-            <div class="card"><img src="arte/calamardo.jpeg" />
-                <p>Calamardo</p>
+            <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/250px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg">
+                <p>Vincent Van Gogh</p>
             </div>
-            <div class="card"><img src="arte/calamardo.jpeg" />
-                <p>Calamardo</p>
+            <div class="card"><img src="https://uploads4.wikiart.org/images/gustav-klimt.jpg!Portrait.jpg">
+                <p>Gustav Klimt</p>
             </div>
-            <div class="card"><img src="arte/calamardo.jpeg" />
-                <p>Calamardo</p>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfRQQ0YCdZnZQ61fJuIyYjk-knyC_VHp6XiQ&s">
+                <p>Claude Monet</p>
             </div>
-            <div class="card"><img src="arte/calamardo.jpeg" />
-                <p>Calamardo</p>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYC-RWHOp2YCzBROp9-ANRVBRIAuCopVh6vA&s">
+                <p>Caspar David Friedrich</p>
             </div>
-            <div class="card"><img src="arte/calamardo.jpeg" />
-                <p>Calamardo</p>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYjaizcy8Ny52ARFhadDaIWaAhZe4p1uU6g&s">
+                <p>August Macke</p>
             </div>
-            <div class="card"><img src="arte/calamardo.jpeg" />
-                <p>Calamardo</p>
-            </div>
-            <div class="card"><img src="" />
-                <p>A</p>
-            </div>
-            <div class="card"><img src="" />
-                <p>A</p>
+            <div class="card"><img src="https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydGlzdFwvaW1hZ2VGaWxlXC90dXJuZXJfc2VsZnBvcnRyYWl0LmpwZyIsInJlc2l6ZUNyb3AsMjAwLDIwMCxDUk9QX0VOVFJPUFkiXX0.9dsE5-T2oDQYpQpSLjflXzg09EYFCrEEVPUQfL6i7TY.jpg">
+                <p>William Turner</p>
             </div>
         </div>
     </section>
@@ -139,9 +111,7 @@
         <p>&copy; 2025 Galería Virtual | Todos los derechos reservados</p>
     </footer>
 
-    <script type="module" src="firebase.js"></script>
-    <script type="module" src="mainsesion.js"></script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
